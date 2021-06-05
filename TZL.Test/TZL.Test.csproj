@@ -59,10 +59,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestCases\DemoChartTestCases.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TZL.Core\TZL.Core.csproj">
+      <Project>{465f0374-c206-41ed-ae97-8fd5419e3be4}</Project>
+      <Name>TZL.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TZL.Repository\TZL.Repository.csproj">
+      <Project>{4f6dbc74-c311-4758-b97c-11e381275ea7}</Project>
+      <Name>TZL.Repository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
